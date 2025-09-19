@@ -36,7 +36,7 @@ export default function HeroSection() {
             </div>
             
             <div className="space-y-8">
-              <h1 className="text-5xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-[-0.03em] text-white">
+              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-[-0.03em] text-white">
                 Превратим кофе в{" "}
                 <span className="text-gradient">
                   персональную историю
