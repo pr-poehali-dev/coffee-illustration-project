@@ -91,7 +91,7 @@ export default function HeroSection() {
 
           {/* Right side - Interactive Preview */}
           <div className="animate-scale-in">
-            <Card className="glass-card p-10 lg:p-12 max-w-lg mx-auto rounded-3xl border border-white/8 shadow-2xl relative overflow-hidden">
+            <Card className="glass-card p-10 lg:p-12 py-16 lg:py-20 max-w-lg mx-auto rounded-3xl border border-white/8 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-orange/5 via-transparent to-purple/5 pointer-events-none"></div>
               <CardContent className="space-y-10 relative z-10">
                 <div className="text-center">
