@@ -84,18 +84,18 @@ export default function GallerySection() {
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/img/afeede1f-d11f-4eea-a68b-70cafb70f674.jpg" 
-                  alt="Аниме девочка с розовыми волосами пьет кофе в стиле кавайи" 
+                  src="/img/7e90e5ca-f8d4-4eac-92af-a524cd9ac9ab.jpg" 
+                  alt="3D кофейный стаканчик 400мл с аниме наклейкой девочки" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-white font-bold text-2xl mb-2">Аниме девочка</h3>
-                  <p className="text-gray-200 text-lg">Стиль: Кавайи аниме</p>
+                  <h3 className="text-white font-bold text-2xl mb-2">3D Стаканчик 400мл</h3>
+                  <p className="text-gray-200 text-lg">Объемная визуализация</p>
                 </div>
                 <div className="absolute top-4 right-4">
                   <div className="glass-effect px-3 py-1 rounded-full text-pink-400 font-semibold">
-                    Трендовый
+                    3D Рендер
                   </div>
                 </div>
               </div>
@@ -106,18 +106,18 @@ export default function GallerySection() {
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/img/0f93ddc0-4ad8-41b8-b1ff-92da6f239830.jpg" 
-                  alt="Стильный аниме парень с синими волосами на кофейном стаканчике" 
+                  src="/img/3166b5b8-7691-437c-ac8c-09c9ab71583f.jpg" 
+                  alt="3D кофейный стаканчик 400мл с комиксовой наклейкой персонажа" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-white font-bold text-2xl mb-2">Аниме парень</h3>
-                  <p className="text-gray-200 text-lg">Стиль: Урбан аниме</p>
+                  <h3 className="text-white font-bold text-2xl mb-2">3D Комикс стиль</h3>
+                  <p className="text-gray-200 text-lg">Реалистичный рендер</p>
                 </div>
                 <div className="absolute top-4 right-4">
                   <div className="glass-effect px-3 py-1 rounded-full text-purple-400 font-semibold">
-                    Стильный
+                    Объемный
                   </div>
                 </div>
               </div>
