@@ -84,8 +84,8 @@ export default function GallerySection() {
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/img/8d097d31-7331-400e-af70-4419c1fc17e6.jpg" 
-                  alt="Аниме девочка на кофейном стаканчике в стиле кавайи" 
+                  src="/img/afeede1f-d11f-4eea-a68b-70cafb70f674.jpg" 
+                  alt="Аниме девочка с розовыми волосами пьет кофе в стиле кавайи" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
@@ -106,8 +106,8 @@ export default function GallerySection() {
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/img/4fe9f016-cdcc-43f2-8c19-b4fefad122fe.jpg" 
-                  alt="Аниме парень на кофейном стаканчике в современном стиле" 
+                  src="/img/0f93ddc0-4ad8-41b8-b1ff-92da6f239830.jpg" 
+                  alt="Стильный аниме парень с синими волосами на кофейном стаканчике" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
