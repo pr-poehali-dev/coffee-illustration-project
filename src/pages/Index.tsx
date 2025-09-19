@@ -28,55 +28,97 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center hero-gradient pt-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+      <section 
+        className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.4) 100%), url('/img/14d5f44c-8d66-4d8d-9eee-1f8565c81f22.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+        
+        {/* Floating particles animation */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-orange/30 rounded-full animate-pulse" style={{animationDelay: '0s'}}></div>
+          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-400/40 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-purple-400/20 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-green-400/30 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
+        </div>
+
         <div className="container mx-auto px-4 z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center space-y-12 max-w-6xl mx-auto">
+            {/* Main headline */}
             <div className="space-y-8 animate-fade-in">
-              <div className="space-y-6">
-                <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
-                  Превратим кофе в{" "}
-                  <span className="text-gradient">персональную историю</span>
-                </h1>
-                <p className="text-2xl text-gray-200 max-w-lg leading-relaxed">
-                  Мы помогаем кофейням создавать уникальные эмоции с помощью персонализированных наклеек в стиле комикс
-                </p>
+              <div className="inline-block">
+                <div className="glass-card px-8 py-4 mb-8">
+                  <span className="text-orange font-bold text-lg uppercase tracking-wider">
+                    🎨 Революция в кофейном бизнесе
+                  </span>
+                </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-6 animate-scale-in">
-                <Button size="lg" className="bg-orange hover:bg-orange-600 text-white px-10 py-6 text-xl animate-glow rounded-xl">
-                  <Icon name="Palette" className="mr-3" size={24} />
-                  Создать мой дизайн
-                </Button>
-                <Button variant="outline" size="lg" className="glass-effect border-white text-white hover:bg-white hover:text-black px-10 py-6 text-xl rounded-xl">
-                  <Icon name="Play" className="mr-3" size={24} />
-                  Смотреть демо
-                </Button>
-              </div>
+              <h1 className="text-7xl lg:text-9xl font-black leading-tight tracking-tight">
+                Превратим кофе в{" "}
+                <span className="text-gradient bg-gradient-to-r from-orange via-yellow-400 to-orange bg-clip-text">
+                  персональную историю
+                </span>
+              </h1>
+              
+              <p className="text-3xl lg:text-4xl text-gray-100 max-w-4xl mx-auto leading-relaxed font-light">
+                Мы помогаем кофейням создавать <span className="text-orange font-semibold">уникальные эмоции</span> с помощью персонализированных наклеек в стиле комикс
+              </p>
+            </div>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col lg:flex-row gap-8 justify-center items-center animate-scale-in">
+              <Button size="lg" className="bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-8 text-2xl animate-glow rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <Icon name="Palette" className="mr-4" size={28} />
+                Создать мой дизайн
+              </Button>
+              <Button variant="outline" size="lg" className="glass-effect border-2 border-white/30 text-white hover:bg-white/10 px-12 py-8 text-2xl rounded-2xl backdrop-blur-md">
+                <Icon name="Play" className="mr-4" size={28} />
+                Смотреть демо
+              </Button>
+            </div>
 
-              <div className="grid grid-cols-3 gap-8 pt-8">
-                <div className="glass-card p-6 text-center">
-                  <div className="text-4xl font-bold text-orange">500+</div>
-                  <div className="text-gray-300 mt-2">Довольных кофеен</div>
-                </div>
-                <div className="glass-card p-6 text-center">
-                  <div className="text-4xl font-bold text-orange">10k+</div>
-                  <div className="text-gray-300 mt-2">Созданных стикеров</div>
-                </div>
-                <div className="glass-card p-6 text-center">
-                  <div className="text-4xl font-bold text-orange">24ч</div>
-                  <div className="text-gray-300 mt-2">Время доставки</div>
-                </div>
+            {/* Stats with enhanced glass cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
+              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300">
+                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">500+</div>
+                <div className="text-gray-200 text-xl font-medium">Довольных кофеен</div>
+                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
+              </div>
+              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300" style={{animationDelay: '0.2s'}}>
+                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">10k+</div>
+                <div className="text-gray-200 text-xl font-medium">Созданных стикеров</div>
+                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
+              </div>
+              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
+                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">24ч</div>
+                <div className="text-gray-200 text-xl font-medium">Время доставки</div>
+                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
               </div>
             </div>
 
-            <div className="animate-scale-in">
-              <img 
-                src="/img/bd339af0-e5e0-4d94-a49d-e430d8f650dd.jpg" 
-                alt="Коллекция кофейных стаканчиков с персонализированными комиксовыми наклейками разных людей" 
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+            {/* Trust indicators */}
+            <div className="pt-12">
+              <p className="text-gray-300 text-lg mb-6">Нам доверяют ведущие кофейни России</p>
+              <div className="flex justify-center items-center space-x-8 opacity-60">
+                <div className="glass-card px-6 py-3 text-lg font-semibold">Starbucks</div>
+                <div className="glass-card px-6 py-3 text-lg font-semibold">Costa Coffee</div>
+                <div className="glass-card px-6 py-3 text-lg font-semibold">Coffee House</div>
+                <div className="glass-card px-6 py-3 text-lg font-semibold">Шоколадница</div>
+              </div>
             </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </section>
