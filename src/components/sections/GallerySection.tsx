@@ -106,13 +106,13 @@ export default function GallerySection() {
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/img/a14e7b71-acb6-4d2a-a438-0f2d40a03154.jpg" 
-                  alt="Кофейный стаканчик 400мл с манга портретом человека" 
+                  src="/img/55bb0bbf-8245-486c-99e6-c2d8e4fb8a51.jpg" 
+                  alt="Кофейный стаканчик 400мл с аниме девочкой на наклейке" 
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-white font-bold text-2xl mb-2">Манга портрет</h3>
+                  <h3 className="text-white font-bold text-2xl mb-2">Аниме девочка</h3>
                   <p className="text-gray-200 text-lg">Стиль: Манга арт</p>
                 </div>
                 <div className="absolute top-4 right-4">
