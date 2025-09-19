@@ -72,8 +72,8 @@ export default function Index() {
 
             <div className="animate-scale-in">
               <img 
-                src="/img/f520e133-531a-44fc-9201-910bef4aee93.jpg" 
-                alt="Кофейный стаканчик с персонализированной наклейкой в стиле комикс" 
+                src="/img/bd339af0-e5e0-4d94-a49d-e430d8f650dd.jpg" 
+                alt="Коллекция кофейных стаканчиков с персонализированными комиксовыми наклейками разных людей" 
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />
             </div>
