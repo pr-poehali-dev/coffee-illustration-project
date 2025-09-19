@@ -192,16 +192,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Trust indicators */}
-        <div className="text-center pt-16">
-          <p className="text-gray-300 text-lg mb-6">Нам доверяют ведущие кофейни России</p>
-          <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
-            <div className="glass-card px-6 py-3 text-lg font-semibold">Starbucks</div>
-            <div className="glass-card px-6 py-3 text-lg font-semibold">Costa Coffee</div>
-            <div className="glass-card px-6 py-3 text-lg font-semibold">Coffee House</div>
-            <div className="glass-card px-6 py-3 text-lg font-semibold">Шоколадница</div>
-          </div>
-        </div>
+
       </div>
 
       {/* Scroll indicator */}
