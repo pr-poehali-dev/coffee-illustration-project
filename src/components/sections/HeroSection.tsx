@@ -26,18 +26,18 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 lg:px-8 z-10">
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-center max-w-7xl mx-auto">
           {/* Left side - Content */}
-          <div className="space-y-12 animate-fade-in flex flex-col justify-center min-h-[600px] lg:min-h-[700px]">
+          <div className="space-y-8 md:space-y-12 animate-fade-in flex flex-col justify-center min-h-[500px] md:min-h-[600px] lg:min-h-[700px]">
 
             
             <div className="space-y-8">
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-[-0.03em] text-white">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-[-0.03em] text-white text-center lg:text-left">
                 Превратим кофе в{" "}
                 <span className="text-gradient">
                   персональную историю
                 </span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-gray-300 leading-[1.5] font-normal max-w-xl">
+              <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 leading-[1.5] font-normal max-w-xl text-center lg:text-left">
                 Мы помогаем кофейням создавать{" "}
                 <span className="text-white font-semibold">уникальные эмоции</span>{" "}
                 с помощью персонализированных наклеек в стиле комикс
@@ -45,10 +45,10 @@ export default function HeroSection() {
             </div>
           
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-scale-in pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-scale-in pt-4 items-center lg:items-start">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 text-lg font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 ease-out animate-glow"
+                className="bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 text-base md:text-lg font-semibold rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-[1.03] transition-all duration-300 ease-out animate-glow"
               >
                 <Icon name="Palette" className="mr-3" size={20} />
                 Создать мой дизайн
@@ -64,20 +64,20 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 lg:gap-6 pt-12">
+            <div className="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-6 pt-8 md:pt-12">
               <div className="glass-card p-6 lg:p-8 text-center hover:scale-[1.05] transition-all duration-300 rounded-3xl border border-white/10 shadow-xl">
-                <div className="text-4xl lg:text-5xl font-black text-gradient mb-3">500+</div>
-                <div className="text-gray-200 text-sm lg:text-base font-semibold tracking-wide">Довольных кофеен</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gradient mb-2 md:mb-3">500+</div>
+                <div className="text-gray-200 text-xs sm:text-sm lg:text-base font-semibold tracking-wide">Довольных кофеен</div>
                 <div className="w-8 h-1 bg-orange/60 mx-auto mt-3 rounded-full"></div>
               </div>
               <div className="glass-card p-6 lg:p-8 text-center hover:scale-[1.05] transition-all duration-300 rounded-3xl border border-white/10 shadow-xl">
-                <div className="text-4xl lg:text-5xl font-black text-gradient mb-3">10k+</div>
-                <div className="text-gray-200 text-sm lg:text-base font-semibold tracking-wide">Созданных стикеров</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gradient mb-2 md:mb-3">10k+</div>
+                <div className="text-gray-200 text-xs sm:text-sm lg:text-base font-semibold tracking-wide">Созданных стикеров</div>
                 <div className="w-8 h-1 bg-orange/60 mx-auto mt-3 rounded-full"></div>
               </div>
               <div className="glass-card p-6 lg:p-8 text-center hover:scale-[1.05] transition-all duration-300 rounded-3xl border border-white/10 shadow-xl">
-                <div className="text-4xl lg:text-5xl font-black text-gradient mb-3">24ч</div>
-                <div className="text-gray-200 text-sm lg:text-base font-semibold tracking-wide">Время доставки</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gradient mb-2 md:mb-3">24ч</div>
+                <div className="text-gray-200 text-xs sm:text-sm lg:text-base font-semibold tracking-wide">Время доставки</div>
                 <div className="w-8 h-1 bg-orange/60 mx-auto mt-3 rounded-full"></div>
               </div>
             </div>
@@ -89,10 +89,10 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange/5 via-transparent to-purple/5 pointer-events-none"></div>
               <CardContent className="space-y-10 relative z-10">
                 <div className="text-center">
-                  <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 leading-tight">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-4 leading-tight text-center">
                     Попробуйте прямо сейчас
                   </h3>
-                  <p className="text-gray-300 text-lg leading-relaxed">
+                  <p className="text-gray-300 text-base md:text-lg leading-relaxed text-center">
                     Загрузите фото и посмотрите магию трансформации
                   </p>
                 </div>
