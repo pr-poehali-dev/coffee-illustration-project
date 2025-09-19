@@ -13,7 +13,7 @@ export default function GallerySection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
           <Card className="glass-card overflow-hidden group animate-fade-in hover:scale-105 transition-all duration-500">
             <CardContent className="p-0">
               <div className="relative overflow-hidden">
@@ -74,6 +74,50 @@ export default function GallerySection() {
                 <div className="absolute top-4 right-4">
                   <div className="glass-effect px-3 py-1 rounded-full text-blue-400 font-semibold">
                     Эксклюзив
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glass-card overflow-hidden group animate-fade-in hover:scale-105 transition-all duration-500" style={{animationDelay: '0.6s'}}>
+            <CardContent className="p-0">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/img/8d097d31-7331-400e-af70-4419c1fc17e6.jpg" 
+                  alt="Аниме девочка на кофейном стаканчике в стиле кавайи" 
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-white font-bold text-2xl mb-2">Аниме девочка</h3>
+                  <p className="text-gray-200 text-lg">Стиль: Кавайи аниме</p>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <div className="glass-effect px-3 py-1 rounded-full text-pink-400 font-semibold">
+                    Трендовый
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="glass-card overflow-hidden group animate-fade-in hover:scale-105 transition-all duration-500" style={{animationDelay: '0.8s'}}>
+            <CardContent className="p-0">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/img/4fe9f016-cdcc-43f2-8c19-b4fefad122fe.jpg" 
+                  alt="Аниме парень на кофейном стаканчике в современном стиле" 
+                  className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <h3 className="text-white font-bold text-2xl mb-2">Аниме парень</h3>
+                  <p className="text-gray-200 text-lg">Стиль: Урбан аниме</p>
+                </div>
+                <div className="absolute top-4 right-4">
+                  <div className="glass-effect px-3 py-1 rounded-full text-purple-400 font-semibold">
+                    Стильный
                   </div>
                 </div>
               </div>
