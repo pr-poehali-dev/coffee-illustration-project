@@ -28,51 +28,54 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center pt-20"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/img/f520e133-531a-44fc-9201-910bef4aee93.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center hero-gradient pt-20">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="container mx-auto px-4 z-10">
-          <div className="text-center space-y-8 max-w-4xl mx-auto">
-            <div className="space-y-6 animate-fade-in">
-              <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
-                Превратим кофе в{" "}
-                <span className="text-gradient">персональную историю</span>
-              </h1>
-              <p className="text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                Мы помогаем кофейням создавать уникальные эмоции с помощью персонализированных наклеек в стиле комикс
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-scale-in">
-              <Button size="lg" className="bg-orange hover:bg-orange-600 text-white px-10 py-6 text-xl animate-glow rounded-xl">
-                <Icon name="Palette" className="mr-3" size={24} />
-                Создать мой дизайн
-              </Button>
-              <Button variant="outline" size="lg" className="glass-effect border-white text-white hover:bg-white hover:text-black px-10 py-6 text-xl rounded-xl">
-                <Icon name="Play" className="mr-3" size={24} />
-                Смотреть демо
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8 animate-fade-in">
+              <div className="space-y-6">
+                <h1 className="text-6xl lg:text-8xl font-bold leading-tight">
+                  Превратим кофе в{" "}
+                  <span className="text-gradient">персональную историю</span>
+                </h1>
+                <p className="text-2xl text-gray-200 max-w-lg leading-relaxed">
+                  Мы помогаем кофейням создавать уникальные эмоции с помощью персонализированных наклеек в стиле комикс
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-6 animate-scale-in">
+                <Button size="lg" className="bg-orange hover:bg-orange-600 text-white px-10 py-6 text-xl animate-glow rounded-xl">
+                  <Icon name="Palette" className="mr-3" size={24} />
+                  Создать мой дизайн
+                </Button>
+                <Button variant="outline" size="lg" className="glass-effect border-white text-white hover:bg-white hover:text-black px-10 py-6 text-xl rounded-xl">
+                  <Icon name="Play" className="mr-3" size={24} />
+                  Смотреть демо
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-3 gap-8 pt-8">
+                <div className="glass-card p-6 text-center">
+                  <div className="text-4xl font-bold text-orange">500+</div>
+                  <div className="text-gray-300 mt-2">Довольных кофеен</div>
+                </div>
+                <div className="glass-card p-6 text-center">
+                  <div className="text-4xl font-bold text-orange">10k+</div>
+                  <div className="text-gray-300 mt-2">Созданных стикеров</div>
+                </div>
+                <div className="glass-card p-6 text-center">
+                  <div className="text-4xl font-bold text-orange">24ч</div>
+                  <div className="text-gray-300 mt-2">Время доставки</div>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
-              <div className="glass-card p-6 text-center">
-                <div className="text-4xl font-bold text-orange">500+</div>
-                <div className="text-gray-300 mt-2">Довольных кофеен</div>
-              </div>
-              <div className="glass-card p-6 text-center">
-                <div className="text-4xl font-bold text-orange">10k+</div>
-                <div className="text-gray-300 mt-2">Созданных стикеров</div>
-              </div>
-              <div className="glass-card p-6 text-center">
-                <div className="text-4xl font-bold text-orange">24ч</div>
-                <div className="text-gray-300 mt-2">Время доставки</div>
-              </div>
+            <div className="animate-scale-in">
+              <img 
+                src="/img/f520e133-531a-44fc-9201-910bef4aee93.jpg" 
+                alt="Кофейный стаканчик с персонализированной наклейкой в стиле комикс" 
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
