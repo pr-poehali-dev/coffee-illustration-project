@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 lg:px-8 z-10">
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-center max-w-7xl mx-auto">
           {/* Left side - Content */}
-          <div className="space-y-12 animate-fade-in">
+          <div className="space-y-12 animate-fade-in flex flex-col justify-center min-h-[600px] lg:min-h-[700px]">
 
             
             <div className="space-y-8">
