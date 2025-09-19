@@ -31,13 +31,13 @@ export default function Index() {
       <section 
         className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.4) 100%), url('/img/14d5f44c-8d66-4d8d-9eee-1f8565c81f22.jpg')`,
+          backgroundImage: `linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%), url('/img/47431193-7093-4ac2-9985-b3b878c73486.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40" />
         
         {/* Floating particles animation */}
         <div className="absolute inset-0">
@@ -48,69 +48,146 @@ export default function Index() {
         </div>
 
         <div className="container mx-auto px-4 z-10">
-          <div className="text-center space-y-12 max-w-6xl mx-auto">
-            {/* Main headline */}
-            <div className="space-y-8 animate-fade-in">
+          <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+            {/* Left side - Content */}
+            <div className="space-y-10 animate-fade-in">
               <div className="inline-block">
-                <div className="glass-card px-8 py-4 mb-8">
+                <div className="glass-card px-6 py-3">
                   <span className="text-orange font-bold text-lg uppercase tracking-wider">
                     🎨 Революция в кофейном бизнесе
                   </span>
                 </div>
               </div>
               
-              <h1 className="text-7xl lg:text-9xl font-black leading-tight tracking-tight">
+              <h1 className="text-6xl lg:text-8xl font-black leading-tight tracking-tight">
                 Превратим кофе в{" "}
                 <span className="text-gradient bg-gradient-to-r from-orange via-yellow-400 to-orange bg-clip-text">
                   персональную историю
                 </span>
               </h1>
               
-              <p className="text-3xl lg:text-4xl text-gray-100 max-w-4xl mx-auto leading-relaxed font-light">
+              <p className="text-2xl lg:text-3xl text-gray-100 leading-relaxed font-light">
                 Мы помогаем кофейням создавать <span className="text-orange font-semibold">уникальные эмоции</span> с помощью персонализированных наклеек в стиле комикс
               </p>
-            </div>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col lg:flex-row gap-8 justify-center items-center animate-scale-in">
-              <Button size="lg" className="bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-8 text-2xl animate-glow rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300">
-                <Icon name="Palette" className="mr-4" size={28} />
-                Создать мой дизайн
-              </Button>
-              <Button variant="outline" size="lg" className="glass-effect border-2 border-white/30 text-white hover:bg-white/10 px-12 py-8 text-2xl rounded-2xl backdrop-blur-md">
-                <Icon name="Play" className="mr-4" size={28} />
-                Смотреть демо
-              </Button>
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-6 animate-scale-in">
+                <Button size="lg" className="bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-6 text-xl animate-glow rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300">
+                  <Icon name="Palette" className="mr-3" size={24} />
+                  Создать мой дизайн
+                </Button>
+                <Button variant="outline" size="lg" className="glass-effect border-2 border-white/30 text-white hover:bg-white/10 px-10 py-6 text-xl rounded-2xl backdrop-blur-md">
+                  <Icon name="Play" className="mr-3" size={24} />
+                  Смотреть демо
+                </Button>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 pt-8">
+                <div className="glass-card p-6 text-center hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-black text-gradient mb-2">500+</div>
+                  <div className="text-gray-300 text-sm">Довольных кофеен</div>
+                </div>
+                <div className="glass-card p-6 text-center hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-black text-gradient mb-2">10k+</div>
+                  <div className="text-gray-300 text-sm">Созданных стикеров</div>
+                </div>
+                <div className="glass-card p-6 text-center hover:scale-105 transition-all duration-300">
+                  <div className="text-4xl font-black text-gradient mb-2">24ч</div>
+                  <div className="text-gray-300 text-sm">Время доставки</div>
+                </div>
+              </div>
             </div>
 
-            {/* Stats with enhanced glass cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 max-w-4xl mx-auto">
-              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300">
-                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">500+</div>
-                <div className="text-gray-200 text-xl font-medium">Довольных кофеен</div>
-                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
-              </div>
-              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300" style={{animationDelay: '0.2s'}}>
-                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">10k+</div>
-                <div className="text-gray-200 text-xl font-medium">Созданных стикеров</div>
-                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
-              </div>
-              <div className="glass-card p-8 text-center hover:scale-105 transition-all duration-300" style={{animationDelay: '0.4s'}}>
-                <div className="text-5xl lg:text-6xl font-black text-gradient mb-4">24ч</div>
-                <div className="text-gray-200 text-xl font-medium">Время доставки</div>
-                <div className="w-12 h-1 bg-orange mx-auto mt-3 rounded-full"></div>
-              </div>
-            </div>
+            {/* Right side - Interactive Preview */}
+            <div className="animate-scale-in">
+              <Card className="glass-card p-8 max-w-lg mx-auto">
+                <CardContent className="space-y-6">
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      🚀 Попробуйте прямо сейчас!
+                    </h3>
+                    <p className="text-gray-400">
+                      Загрузите фото и посмотрите, как оно превратится в комикс
+                    </p>
+                  </div>
 
-            {/* Trust indicators */}
-            <div className="pt-12">
-              <p className="text-gray-300 text-lg mb-6">Нам доверяют ведущие кофейни России</p>
-              <div className="flex justify-center items-center space-x-8 opacity-60">
-                <div className="glass-card px-6 py-3 text-lg font-semibold">Starbucks</div>
-                <div className="glass-card px-6 py-3 text-lg font-semibold">Costa Coffee</div>
-                <div className="glass-card px-6 py-3 text-lg font-semibold">Coffee House</div>
-                <div className="glass-card px-6 py-3 text-lg font-semibold">Шоколадница</div>
-              </div>
+                  {/* Upload Area */}
+                  <div className="glass-card border-2 border-dashed border-orange/30 hover:border-orange/60 transition-colors p-8 text-center cursor-pointer group">
+                    <Icon name="Upload" size={48} className="text-orange/60 group-hover:text-orange mx-auto mb-4" />
+                    <p className="text-white font-semibold mb-2">Загрузите фото</p>
+                    <p className="text-gray-400 text-sm">или перетащите файл сюда</p>
+                  </div>
+
+                  {/* Demo Preview */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center">
+                      <p className="text-gray-400 text-sm mb-3">До</p>
+                      <div className="glass-card p-4 rounded-xl">
+                        <div className="w-20 h-20 bg-gray-600 rounded-full mx-auto flex items-center justify-center">
+                          <Icon name="User" size={32} className="text-gray-400" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-orange text-sm mb-3">После</p>
+                      <div className="glass-card p-4 rounded-xl border border-orange/30">
+                        <img 
+                          src="/img/bd339af0-e5e0-4d94-a49d-e430d8f650dd.jpg" 
+                          alt="Комиксовый стиль" 
+                          className="w-20 h-20 rounded-full mx-auto object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Style Options */}
+                  <div>
+                    <p className="text-white font-semibold mb-3">Выберите стиль:</p>
+                    <div className="grid grid-cols-3 gap-3">
+                      <button className="glass-card p-3 text-center hover:border-orange/50 transition-colors border border-transparent">
+                        <div className="text-2xl mb-1">🦸</div>
+                        <p className="text-xs text-gray-400">Супергерой</p>
+                      </button>
+                      <button className="glass-card p-3 text-center hover:border-orange/50 transition-colors border border-orange/50 bg-orange/10">
+                        <div className="text-2xl mb-1">🎨</div>
+                        <p className="text-xs text-orange">Классик</p>
+                      </button>
+                      <button className="glass-card p-3 text-center hover:border-orange/50 transition-colors border border-transparent">
+                        <div className="text-2xl mb-1">🌟</div>
+                        <p className="text-xs text-gray-400">Аниме</p>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Generate Button */}
+                  <Button className="w-full bg-gradient-to-r from-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-4 text-lg rounded-xl animate-glow">
+                    <Icon name="Sparkles" className="mr-2" size={20} />
+                    Создать стикер
+                  </Button>
+
+                  {/* Processing Animation */}
+                  <div className="text-center opacity-60">
+                    <div className="flex justify-center space-x-2 mb-2">
+                      <div className="w-2 h-2 bg-orange rounded-full animate-pulse" style={{animationDelay: '0s'}}></div>
+                      <div className="w-2 h-2 bg-orange rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+                      <div className="w-2 h-2 bg-orange rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+                    </div>
+                    <p className="text-gray-400 text-sm">⚡ Обработка за 3 секунды</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="text-center pt-16">
+            <p className="text-gray-300 text-lg mb-6">Нам доверяют ведущие кофейни России</p>
+            <div className="flex flex-wrap justify-center items-center gap-6 opacity-60">
+              <div className="glass-card px-6 py-3 text-lg font-semibold">Starbucks</div>
+              <div className="glass-card px-6 py-3 text-lg font-semibold">Costa Coffee</div>
+              <div className="glass-card px-6 py-3 text-lg font-semibold">Coffee House</div>
+              <div className="glass-card px-6 py-3 text-lg font-semibold">Шоколадница</div>
             </div>
           </div>
         </div>
