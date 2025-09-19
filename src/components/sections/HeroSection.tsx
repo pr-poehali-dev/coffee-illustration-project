@@ -95,10 +95,6 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange/5 via-transparent to-purple/5 pointer-events-none"></div>
               <CardContent className="space-y-10 relative z-10">
                 <div className="text-center">
-                  <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-4 border border-orange/20">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-gray-300">ИИ готов к работе</span>
-                  </div>
                   <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 leading-tight">
                     Попробуйте прямо сейчас
                   </h3>
