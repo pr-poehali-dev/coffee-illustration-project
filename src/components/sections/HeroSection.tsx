@@ -27,13 +27,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-24 items-center max-w-7xl mx-auto">
           {/* Left side - Content */}
           <div className="space-y-12 animate-fade-in">
-            <div className="inline-block">
-              <div className="glass-card px-6 py-3 rounded-full border border-orange/20 bg-gradient-to-r from-orange/10 to-orange/5 shadow-lg">
-                <span className="text-orange font-medium text-base tracking-wide">
-                  ✨ Революция в кофейном бизнесе
-                </span>
-              </div>
-            </div>
+
             
             <div className="space-y-8">
               <h1 className="text-4xl lg:text-6xl xl:text-7xl font-black leading-[1.05] tracking-[-0.03em] text-white">
