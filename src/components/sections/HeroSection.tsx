@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { ChatGPTPlayground } from "@/components/extensions/chatgpt-polza/ChatGPTPlayground";
+
+const CHATGPT_API_URL = "https://functions.poehali.dev/c3dfcb90-14bb-4e43-aa73-55b6219d449c";
 
 export default function HeroSection() {
   return (
@@ -83,104 +86,26 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right side - Interactive Preview */}
+          {/* Right side - ChatGPT */}
           <div className="animate-scale-in my-16 lg:my-20">
-            <Card className="glass-card p-10 lg:p-12 max-w-lg mx-auto rounded-3xl border border-white/8 shadow-2xl relative overflow-hidden">
+            <Card className="glass-card max-w-lg mx-auto rounded-3xl border border-white/8 shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-orange/5 via-transparent to-purple/5 pointer-events-none"></div>
-              <CardContent className="space-y-10 relative z-10">
-                <div className="text-center">
-                  <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white mb-4 leading-tight text-center">
-                    Попробуйте прямо сейчас
+              <CardContent className="p-0 relative z-10">
+                <div className="px-6 pt-6 pb-3 text-center">
+                  <h3 className="text-xl sm:text-2xl font-black text-white mb-1 leading-tight">
+                    Спросите нашего ИИ-ассистента
                   </h3>
-                  <p className="text-gray-300 text-base md:text-lg leading-relaxed text-center">
-                    Загрузите фото и посмотрите магию трансформации
+                  <p className="text-gray-400 text-sm">
+                    Узнайте всё о персонализированных стикерах
                   </p>
                 </div>
-
-                {/* Upload Area */}
-                <div className="glass-card border-2 border-dashed border-orange/20 hover:border-orange/40 transition-all duration-300 p-12 lg:p-14 text-center cursor-pointer group rounded-3xl relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <Icon name="Upload" size={48} className="text-orange/40 group-hover:text-orange mx-auto mb-4 transition-all duration-300 group-hover:scale-110" />
-                  <p className="text-white font-bold mb-2 text-xl">Загрузите фото</p>
-                  <p className="text-gray-400 text-base">JPG, PNG до 10MB</p>
-                  <div className="absolute top-4 right-4">
-                    <div className="w-3 h-3 bg-orange/30 rounded-full animate-pulse"></div>
-                  </div>
+                <div className="h-[480px] rounded-b-3xl overflow-hidden">
+                  <ChatGPTPlayground
+                    apiUrl={CHATGPT_API_URL}
+                    defaultModel="openai/gpt-4o-mini"
+                  />
                 </div>
 
-                {/* Demo Preview */}
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="text-center space-y-5">
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="w-2 h-2 bg-gray-500 rounded-full"></div>
-                      <p className="text-gray-400 text-sm font-bold uppercase tracking-widest">До</p>
-                    </div>
-                    <div className="glass-card p-8 rounded-3xl border border-gray-500/20">
-                      <div className="w-28 h-28 bg-gradient-to-br from-gray-600/30 to-gray-700/50 rounded-full mx-auto flex items-center justify-center relative">
-                        <Icon name="User" size={32} className="text-gray-400" />
-                        <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center">
-                          <span className="text-red-400 text-xs">✕</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-center space-y-5">
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="w-2 h-2 bg-orange rounded-full animate-pulse"></div>
-                      <p className="text-orange text-sm font-bold uppercase tracking-widest">После</p>
-                    </div>
-                    <div className="glass-card p-8 rounded-3xl border border-orange/30 bg-gradient-to-br from-orange/10 to-orange/5 shadow-xl">
-                      <div className="relative">
-                        <img 
-                          src="/img/bd339af0-e5e0-4d94-a49d-e430d8f650dd.jpg" 
-                          alt="Комиксовый стиль" 
-                          className="w-28 h-28 rounded-full mx-auto object-cover ring-4 ring-orange/20 shadow-lg"
-                        />
-                        <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
-                          <span className="text-white text-xs font-bold">✓</span>
-                        </div>
-                        <div className="absolute -top-1 -left-1 w-4 h-4 bg-orange rounded-full animate-ping"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Style Options */}
-                <div className="space-y-6">
-                  <p className="text-white font-bold text-xl text-center">Выберите стиль:</p>
-                  <div className="grid grid-cols-3 gap-4">
-                    <button className="glass-card p-5 text-center hover:bg-white/8 hover:scale-105 transition-all duration-300 border border-transparent hover:border-white/20 rounded-2xl group">
-                      <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🦸</div>
-                      <p className="text-sm text-gray-400 font-bold">Супергерой</p>
-                    </button>
-                    <button className="glass-card p-5 text-center border-2 border-orange/40 bg-gradient-to-br from-orange/15 to-orange/5 rounded-2xl shadow-lg scale-105">
-                      <div className="text-4xl mb-3">🎨</div>
-                      <p className="text-sm text-orange font-bold">Классик</p>
-                      <div className="absolute -top-1 -right-1 w-3 h-3 bg-orange rounded-full animate-pulse"></div>
-                    </button>
-                    <button className="glass-card p-5 text-center hover:bg-white/8 hover:scale-105 transition-all duration-300 border border-transparent hover:border-white/20 rounded-2xl group">
-                      <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-300">🌟</div>
-                      <p className="text-sm text-gray-400 font-bold">Аниме</p>
-                    </button>
-                  </div>
-                </div>
-
-                {/* Generate Button */}
-                <Button className="w-full bg-gradient-to-r from-orange via-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-6 text-xl font-bold rounded-3xl shadow-2xl hover:shadow-3xl transform hover:scale-[1.02] transition-all duration-300 animate-glow relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <Icon name="Sparkles" className="mr-3" size={24} />
-                  Создать стикер
-                </Button>
-
-                {/* Processing Animation */}
-                <div className="text-center glass-card p-4 rounded-2xl">
-                  <div className="flex justify-center space-x-3 mb-4">
-                    <div className="w-3 h-3 bg-orange rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
-                    <div className="w-3 h-3 bg-orange rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                    <div className="w-3 h-3 bg-orange rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
-                  </div>
-                  <p className="text-gray-300 text-sm font-semibold">⚡ Магия за 3 секунды</p>
-                </div>
               </CardContent>
             </Card>
           </div>
