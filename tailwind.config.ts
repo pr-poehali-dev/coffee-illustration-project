@@ -18,6 +18,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				comic: ['Bangers', 'Impact', 'sans-serif'],
+				bungee: ['Bungee', 'Impact', 'sans-serif'],
+				marker: ['"Permanent Marker"', 'sans-serif'],
+				body: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -90,6 +96,13 @@ export default {
 					700: '#c2410c',
 					800: '#9a3412',
 					900: '#7c2d12',
+				},
+				comic: {
+					yellow: '#FFD93D',
+					red: '#E63946',
+					blue: '#4A90E2',
+					cream: '#FFF8E7',
+					ink: '#0A0A0A',
 				},
 			},
 			borderRadius: {

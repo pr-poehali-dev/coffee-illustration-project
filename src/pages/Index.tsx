@@ -8,7 +8,7 @@ import Footer from "@/components/sections/Footer";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-dark-300 text-white dark">
+    <div className="min-h-screen paper-bg text-black">
       <Header />
       <HeroSection />
       <GallerySection />
